@@ -41,3 +41,23 @@ def singur_fiu(arbore):
 
 print("singur fiu:", end="")
 singur_fiu(radacina)
+
+
+'''2. Scrieți o funcție care ia un arbore binar și returnează numărul total de noduri din arbore.'''
+
+print("exercitiul 2;")
+def nr_noduri(arbore):
+    if arbore is not None:
+        return 1+nr_noduri(arbore[stanga])
+    elif arbore[dreapta] is not None:
+        return 1+nr_noduri(arbore[dreapta])
+    else:
+        return 0
+    
+print(nr_noduri(radacina), end="")
+
+
+
+print(radacina[dreapta])
+
+
