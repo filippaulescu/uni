@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
 char *string_replace_dynamic(const char *where, const char *what, const char *replace)
 {
  
